@@ -59,12 +59,15 @@ export default function App() {
 
   return (
     <>
+      <StarRating
+        maxRating={5}
+        messages={["Terrible", "Bad", "Okay", "Good", "Amazing"]}
+      />
+
       <Navbar>
         <Search />
         <NumResult movies={movies} />
       </Navbar>
-
-      <StarRating maxRating={5} />
 
       <Main>
         <Box>
