@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 import "./index.css";
+import StarRating from "./StarRating";
 
 const tempMovieData = [
   {
@@ -62,6 +63,8 @@ export default function App() {
         <Search />
         <NumResult movies={movies} />
       </Navbar>
+
+      <StarRating maxRating={5} />
 
       <Main>
         <Box>
