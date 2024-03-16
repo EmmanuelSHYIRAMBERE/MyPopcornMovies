@@ -205,7 +205,7 @@ function Logo() {
   return (
     <div className="logo">
       <span role="img">🍿</span>
-      <h1>usePopcorn</h1>
+      <h1>MyPopcornMovies</h1>
     </div>
   );
 }
@@ -355,7 +355,7 @@ function MovieDetails({
       document.title = `Movie | ${title}`;
 
       return function () {
-        document.title = "usePopcorn";
+        document.title = "MyPopcornMovies";
       };
     },
     [title]
